@@ -1,26 +1,16 @@
-package com.example.lemonade // ここは元のファイルの一番上と同じにしてね
+package com.example.lemonade
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // さっき作った activity_main.xml を画面に映すよ
         setContentView(R.layout.activity_main)
-
-        val input = findViewById<EditText>(R.id.messageInput)
-        val button = findViewById<Button>(R.id.sendButton)
-        val display = findViewById<TextView>(R.id.messageDisplay)
-
-        button.setOnClickListener {
-            val text = input.text.toString()
-            if (text.isNotEmpty()) {
-                display.append("\nみず: $text")
-                input.text.clear()
-            }
-        }
+        
+        // ここから先、ゲームを動かすタイマーとかを
+        // 少しずつ追加して「完全なテトリス」にしていこう！
     }
 }
