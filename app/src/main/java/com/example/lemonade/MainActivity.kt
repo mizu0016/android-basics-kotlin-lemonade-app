@@ -1,4 +1,4 @@
-package com.example.android.lemonade // ここは元のファイルの一番上と同じにしてね
+package com.example.lemonade // ここは元のファイルの一番上と同じにしてね
 
 import android.os.Bundle
 import android.widget.Button
