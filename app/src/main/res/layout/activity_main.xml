@@ -1,49 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#E1F5FE"> <TextView
+    android:background="#000000">
+
+    <com.example.lemonade.TetrisView
+        android:id="@+id/tetrisView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mizu Message"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#01579B"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="8dp">
-        <TextView
-            android:id="@+id/messageDisplay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="ここにメッセージが表示されるよ！\n"
-            android:textSize="16sp" />
-    </ScrollView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <EditText
-            android:id="@+id/messageInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="メッセージを入力..."/>
-        <Button
-            android:id="@+id/sendButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="送信"
-            android:backgroundTint="#0288D1"/>
-    </LinearLayout>
-</LinearLayout>
+        android:text="Score: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_margin="16dp" />
+</FrameLayout>
