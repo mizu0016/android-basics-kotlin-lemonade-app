@@ -36,7 +36,7 @@ class OverlayService : Service() {
         }
 
         val textView = TextView(this).apply {
-            text = "スマホを1時間連続でやっています　目を話しましょう"
+            text = "スマホを1時間連続でやっています　目を離しましょう"
             textSize = 20f
             setBackgroundColor(0x88000000.toInt()) // 半透明の黒背景
             setTextColor(0xFFFFFFFF.toInt()) // 白文字
